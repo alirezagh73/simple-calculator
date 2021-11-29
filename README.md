@@ -1,7 +1,7 @@
-#Calculator
+# Calculator
 
 you can use this calculator for your simple mathematics calculations.
 
-view DEMO ==> 
+VIEW [DEMO](https://alirezagh73.github.io/simple-calculator/)
 
 
