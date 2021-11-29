@@ -1,3 +1,11 @@
+:root {
+  --calc-dark-background: #f0f2f8;
+  --calc-dark-btn-color: linear-gradient(120deg, hsla(220, 13%, 87%, 0.9) 0%, hsla(220, 5%, 37%, 1) 100%);
+  --calc-display-color:#161616;
+  --mode-btn:#f0f2f8;
+  --mode-btn-background:rgba(22,22,22,0.92);
+}
+
 html, body, * {
   margin: 0;
   padding: 0;
@@ -13,11 +21,32 @@ html, body, * {
   box-sizing: border-box;
   background: linear-gradient(90deg, rgba(21, 25, 23, 0.9) 0%, #1f0538 100%);
 }
+.container .dark_wrapper {
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  border-radius: 32px;
+  border: none;
+  top: 50px;
+  left: 40px;
+  background-color: var(--mode-btn-background);
+}
+.container .dark_wrapper .dark_btn {
+  width: 50%;
+  cursor: pointer;
+  height: 120%;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--mode-btn);
+  position: absolute;
+  top: -10%;
+  left: -5%;
+}
 .container input {
   font-size: 1.3rem;
 }
 .container input[type=button] {
-  background: linear-gradient(120deg, rgba(218, 220, 226, 0.9) 0%, #5a5d63 100%);
+  background: var(--calc-dark-btn-color);
   cursor: pointer;
   text-align: center;
   transition: transform 0.2s linear;
@@ -29,13 +58,13 @@ html, body, * {
 }
 .container .calculator {
   position: relative;
-  background-color: #f0f2f8;
+  background-color: var(--calc-dark-background);
   padding: 5px;
   min-width: 300px;
   min-height: 500px;
   border: none;
   border-radius: 16px;
-  box-shadow: 3px 1px 3px 1px #f0f2f8;
+  box-shadow: 3px 1px 3px 1px var(--calc-dark-background);
 }
 .container .calculator .calculator_display .showCalc {
   position: absolute;
@@ -45,7 +74,7 @@ html, body, * {
   color: #7a7a7a;
 }
 .container .calculator .calculator_display .display {
-  background-color: #f0f2f8;
+  background-color: var(--calc-dark-background);
   padding: 10px;
   border: none;
   min-height: 150px;
@@ -53,6 +82,7 @@ html, body, * {
   font-size: 1.5rem;
   outline: none;
   text-align: right;
+  color: var(--calc-display-color);
 }
 .container .calculator .calculator_body .row {
   text-align: center;
