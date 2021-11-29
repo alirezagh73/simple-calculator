@@ -1,0 +1,89 @@
+html, body, * {
+  margin: 0;
+  padding: 0;
+  font-family: "vazir";
+}
+
+.container {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, rgba(21, 25, 23, 0.9) 0%, #1f0538 100%);
+}
+.container input {
+  font-size: 1.3rem;
+}
+.container input[type=button] {
+  background: linear-gradient(120deg, rgba(218, 220, 226, 0.9) 0%, #5a5d63 100%);
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s linear;
+}
+.container input[type=button]:active {
+  background-color: black !important;
+  color: #f0f2f8 !important;
+  transform: scale(0.8);
+}
+.container .calculator {
+  position: relative;
+  background-color: #f0f2f8;
+  padding: 5px;
+  min-width: 300px;
+  min-height: 500px;
+  border: none;
+  border-radius: 16px;
+  box-shadow: 3px 1px 3px 1px #f0f2f8;
+}
+.container .calculator .calculator_display .showCalc {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  font-size: 1.1rem;
+  color: #7a7a7a;
+}
+.container .calculator .calculator_display .display {
+  background-color: #f0f2f8;
+  padding: 10px;
+  border: none;
+  min-height: 150px;
+  min-width: 250px;
+  font-size: 1.5rem;
+  outline: none;
+  text-align: right;
+}
+.container .calculator .calculator_body .row {
+  text-align: center;
+}
+.container .calculator .calculator_body .opt-btn {
+  border: none;
+  min-width: 60px;
+  margin: 5px;
+  height: 35px;
+  border-radius: 16px;
+}
+.container .calculator .calculator_body .btn {
+  margin: 10px 5px;
+  border: none;
+  width: 60px;
+  height: 50px;
+  border-radius: 28px;
+}
+.container .calculator .calculator_body .btn-math {
+  background: linear-gradient(120deg, rgba(255, 149, 0, 0.9) 0%, #593503 100%);
+  color: #f0f2f8;
+}
+.container .calculator .calculator_body .btn.clear {
+  background: linear-gradient(120deg, rgba(250, 82, 82, 0.9) 0%, #6c2323 100%);
+}
+.container .calculator .calculator_body .btn.equal {
+  background: linear-gradient(120deg, rgba(0, 255, 183, 0.9) 0%, #004231 100%);
+  color: #f0f2f8;
+}
+.container .calculator .calculator_body .btn.zero {
+  min-width: 135px;
+}
+
+/*# sourceMappingURL=style.css.map */
